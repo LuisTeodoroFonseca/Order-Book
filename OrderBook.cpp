@@ -41,6 +41,9 @@ OrderBook::~OrderBook() {
 }
 
 bool OrderBook::submit(Order order) {
+    if (order.getType() != 'B' && order.getType() != 'S') {
+        throw std::invalid_argument("A ordem deve ser obrigatoriamente de compra ou de venda");
+    }
     if (order.getType() == 'B') { // faz primeiro para ordem de compra
         if (SellHead != nullptr && SellHead->order.getPrice() <= order.getPrice()) { //como SellHead é o elemento com menor preço de venda, só precisa comparar com o primeiro elemento da lista (a lista já está ordenada pelo menor preço)
             Node* temp = SellHead;

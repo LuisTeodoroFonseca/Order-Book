@@ -6,10 +6,10 @@ Uma ordem representa a intenção de comprar ou vender a ação por um determina
 Certifique-se de ter um compilador c++ instalado. 
 Para compilar o projeto, digite no terminal:
 
-`g++ main.cpp Order.cpp OrderBook.cpp Transaction.cpp -o main`
+`g++ main.cpp OrderBook.cpp Order.cpp Transaction.cpp -o order_book`
 
 ## Instruções de execução
-Após a compilação, execute: `./main.exe`
+Após a compilação, execute: `.\order_book.exe`
 
 ## Estrutura dos dados
 A classe principal do nosso sistema, `OrderBook`, armazena as seguintes informações:
