@@ -9,7 +9,7 @@ Para compilar o projeto, digite no terminal:
 `g++ main.cpp Order.cpp OrderBook.cpp Transaction.cpp -o main`
 
 ## Instruções de execução
-Após a compilação, execute: `.\main.exe`
+Após a compilação, execute: `./main.exe`
 
 ## Estrutura dos dados
 A classe principal do nosso sistema, `OrderBook`, armazena as seguintes informações:
